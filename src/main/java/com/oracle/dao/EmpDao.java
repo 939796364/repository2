@@ -5,7 +5,7 @@ import org.apache.ibatis.annotations.Param;
 import com.oracle.vo.Emp;
 
 public interface EmpDao {
-	//ddddd
+	//dddddqwq 
 	public  Emp getEmp(@Param("empId")int empId);
 	public void save(Emp e);
 	public List<Emp> selectEmp(Emp emp);
