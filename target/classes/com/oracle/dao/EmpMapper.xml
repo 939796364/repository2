@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.oracle.dao.EmpDao">
+	<insert id="save" parameterType="emp">
+		insert into tb_emp
+		values(null,#{role.roleId},#{empNo},#{passWord}
+		,#{empName},#{tel})
+	</insert>
+
+	<select id="selectEmp" parameterType="emp" resultType="emp">
+		select * from tb_emp
+		<trim prefix="where" prefixOverrides="AND|OR" suffixOverrides=",">
+			<choose>
+				<when test="empName!=null">
+					<bind name="name" value="'%'+empName+'%'"/>
+					and empName like #{name}
+				</when>
+				<otherwise>
+					and tel=#{tel},
+				</otherwise>
+			</choose>
+		</trim>
+	</select>
+
+	<select id="getEmp" resultMap="myEmp" parameterType="int">
+		select
+		empid,empNo,passWord,empName,tel,e.roleId,r.roleName,
+		ri.rightName,ri.rightURL,ri.rightID
+		FROM
+		tb_emp e
+		inner join tb_role r on
+		e.roleId=r.roleId
+		INNER JOIN to_rightrole rt on r.roleId=rt.roleId
+		inner JOIN tb_right ri on ri.rightid=rt.rightid
+		where empid=#{empId}
+	</select>
+
+	<resultMap id="myEmp" type="emp">
+		<id column="empId" property="empId" />
+		<result column="empNo" property="empNo" />
+		<result column="passWord" property="passWord" />
+		<result column="empName" property="empName" />
+		<result column="tel" property="tel" />
+		<association property="role" javaType="role">
+			<id column="roleId" property="roleId" />
+			<result column="roleName" property="roleName" />
+			<collection property="rights" ofType="right">
+				<id column="rightId" property="rightId" />
+				<result column="rightName" property="rightName" />
+				<result column="rightURL" property="rightURL" />
+			</collection>
+		</association>
+	</resultMap>
+	
+	<update id="update" parameterType="emp">
+		update tb_emp 
+		<set>
+			<if test="empName!=null">
+				empName=#{empName},
+			</if>
+			<if test="tel!=null">
+				tel=#{tel},
+			</if>
+		</set>
+		where empId=#{empId}
+	</update>
+	
+	<delete id="delete" parameterType="int[]">
+		delete from tb_emp where empId in
+		<foreach collection="empIds" open="(" close=")" item="id" separator=",">
+			#{id}
+		</foreach>
+	</delete>
+	
+	
+	
+	
+	
+
+</mapper>

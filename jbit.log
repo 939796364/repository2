@@ -1,0 +1,386 @@
+2018-02-06 22:12:27 LogFactory.java DEBUG Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+  2018-02-06 22:12:27 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-06 22:12:27 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-06 22:12:27 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-06 22:12:27 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-06 22:15:03 LogFactory.java DEBUG Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+  2018-02-06 22:15:03 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-06 22:15:03 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-06 22:15:03 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-06 22:15:03 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-06 22:15:03 JdbcTransaction.java DEBUG Opening JDBC Connection
+  2018-02-06 22:15:03 PooledDataSource.java DEBUG Created connection 690686166.
+  2018-02-06 22:15:03 JdbcTransaction.java DEBUG Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@292b08d6]
+  2018-02-06 22:15:03 BaseJdbcLogger.java DEBUG ==>  Preparing: select empid,empNo,passWord,empName,tel,e.roleId FROM tb_emp e inner join tb_role r on e.roleId=r.roleId INNER JOIN to_rightrole rt on r.roleId=rt.roleId inner JOIN tb_right ri on ri.rightid=rt.rightid where empid=? 
+  2018-02-06 22:15:03 BaseJdbcLogger.java DEBUG ==> Parameters: 2(Integer)
+  2018-02-06 22:15:03 BaseJdbcLogger.java DEBUG <==      Total: 6
+  2018-02-06 22:15:03 JdbcTransaction.java DEBUG Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@292b08d6]
+  2018-02-06 22:15:03 JdbcTransaction.java DEBUG Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@292b08d6]
+  2018-02-06 22:15:03 PooledDataSource.java DEBUG Returned connection 690686166 to pool.
+  2018-02-06 22:20:11 LogFactory.java DEBUG Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+  2018-02-06 22:20:11 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-06 22:20:11 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-06 22:20:11 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-06 22:20:11 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-06 22:20:12 JdbcTransaction.java DEBUG Opening JDBC Connection
+  2018-02-06 22:20:12 PooledDataSource.java DEBUG Created connection 690686166.
+  2018-02-06 22:20:12 JdbcTransaction.java DEBUG Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@292b08d6]
+  2018-02-06 22:20:12 BaseJdbcLogger.java DEBUG ==>  Preparing: select empid,empNo,passWord,empName,tel,e.roleId,r.roleName, ri.rightName,ri.rightURL,ri.rightID FROM tb_emp e inner join tb_role r on e.roleId=r.roleId INNER JOIN to_rightrole rt on r.roleId=rt.roleId inner JOIN tb_right ri on ri.rightid=rt.rightid where empid=? 
+  2018-02-06 22:20:12 BaseJdbcLogger.java DEBUG ==> Parameters: 2(Integer)
+  2018-02-06 22:20:12 BaseJdbcLogger.java DEBUG <==      Total: 6
+  2018-02-06 22:20:12 JdbcTransaction.java DEBUG Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@292b08d6]
+  2018-02-06 22:20:12 JdbcTransaction.java DEBUG Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@292b08d6]
+  2018-02-06 22:20:12 PooledDataSource.java DEBUG Returned connection 690686166 to pool.
+  2018-02-06 22:28:20 LogFactory.java DEBUG Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+  2018-02-06 22:28:20 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-06 22:28:20 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-06 22:28:20 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-06 22:28:20 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-06 22:28:20 JdbcTransaction.java DEBUG Opening JDBC Connection
+  2018-02-06 22:28:21 PooledDataSource.java DEBUG Created connection 1647809929.
+  2018-02-06 22:28:21 JdbcTransaction.java DEBUG Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@62379589]
+  2018-02-06 22:28:21 BaseJdbcLogger.java DEBUG ==>  Preparing: insert into tb_emp values(null,?,?,? ,?,?) 
+  2018-02-06 22:28:21 BaseJdbcLogger.java DEBUG ==> Parameters: 1(Integer), 1111(String), 777(String), 刘婵(String), 18899997777(String)
+  2018-02-06 22:28:21 BaseJdbcLogger.java DEBUG <==    Updates: 1
+  2018-02-06 22:28:21 JdbcTransaction.java DEBUG Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@62379589]
+  2018-02-06 22:28:21 JdbcTransaction.java DEBUG Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@62379589]
+  2018-02-06 22:28:21 JdbcTransaction.java DEBUG Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@62379589]
+  2018-02-06 22:28:21 PooledDataSource.java DEBUG Returned connection 1647809929 to pool.
+  2018-02-07 09:29:07 LogFactory.java DEBUG Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+  2018-02-07 09:29:07 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 09:29:07 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 09:29:07 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 09:29:07 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 09:29:07 JdbcTransaction.java DEBUG Opening JDBC Connection
+  2018-02-07 09:29:08 PooledDataSource.java DEBUG Created connection 484589713.
+  2018-02-07 09:29:08 JdbcTransaction.java DEBUG Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1ce24091]
+  2018-02-07 09:29:08 BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where 1=1 
+  2018-02-07 09:29:08 BaseJdbcLogger.java DEBUG ==> Parameters: 
+  2018-02-07 09:29:08 BaseJdbcLogger.java DEBUG <==      Total: 8
+  2018-02-07 09:29:08 JdbcTransaction.java DEBUG Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1ce24091]
+  2018-02-07 09:29:08 JdbcTransaction.java DEBUG Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1ce24091]
+  2018-02-07 09:29:08 PooledDataSource.java DEBUG Returned connection 484589713 to pool.
+  2018-02-07 09:31:34 LogFactory.java DEBUG Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+  2018-02-07 09:31:34 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 09:31:34 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 09:31:34 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 09:31:34 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 09:31:34 JdbcTransaction.java DEBUG Opening JDBC Connection
+  2018-02-07 09:31:35 PooledDataSource.java DEBUG Created connection 484589713.
+  2018-02-07 09:31:35 JdbcTransaction.java DEBUG Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1ce24091]
+  2018-02-07 09:31:35 BaseJdbcLogger.java DEBUG ==>  Preparing: select * from tb_emp where 1=1 
+  2018-02-07 09:31:35 BaseJdbcLogger.java DEBUG ==> Parameters: 
+  2018-02-07 09:31:35 BaseJdbcLogger.java DEBUG <==      Total: 5
+  2018-02-07 09:31:35 JdbcTransaction.java DEBUG Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1ce24091]
+  2018-02-07 09:31:35 JdbcTransaction.java DEBUG Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1ce24091]
+  2018-02-07 09:31:35 PooledDataSource.java DEBUG Returned connection 484589713 to pool.
+  2018-02-07 09:32:31 LogFactory.java DEBUG Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+  2018-02-07 09:32:31 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 09:32:31 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 09:32:31 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 09:32:31 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 09:32:31 JdbcTransaction.java DEBUG Opening JDBC Connection
+  2018-02-07 09:32:32 PooledDataSource.java DEBUG Created connection 978508707.
+  2018-02-07 09:32:32 JdbcTransaction.java DEBUG Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3a52dba3]
+  2018-02-07 09:32:32 BaseJdbcLogger.java DEBUG ==>  Preparing: select * from tb_emp 
+  2018-02-07 09:32:32 BaseJdbcLogger.java DEBUG ==> Parameters: 
+  2018-02-07 09:32:32 BaseJdbcLogger.java DEBUG <==      Total: 5
+  2018-02-07 09:32:32 JdbcTransaction.java DEBUG Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3a52dba3]
+  2018-02-07 09:32:32 JdbcTransaction.java DEBUG Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@3a52dba3]
+  2018-02-07 09:32:32 PooledDataSource.java DEBUG Returned connection 978508707 to pool.
+  2018-02-07 09:33:07 LogFactory.java DEBUG Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+  2018-02-07 09:33:07 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 09:33:07 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 09:33:07 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 09:33:07 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 09:33:07 JdbcTransaction.java DEBUG Opening JDBC Connection
+  2018-02-07 09:33:07 PooledDataSource.java DEBUG Created connection 978508707.
+  2018-02-07 09:33:07 JdbcTransaction.java DEBUG Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3a52dba3]
+  2018-02-07 09:33:07 BaseJdbcLogger.java DEBUG ==>  Preparing: select * from tb_emp WHERE empName=? 
+  2018-02-07 09:33:07 BaseJdbcLogger.java DEBUG ==> Parameters: 张三(String)
+  2018-02-07 09:33:07 BaseJdbcLogger.java DEBUG <==      Total: 1
+  2018-02-07 09:33:07 JdbcTransaction.java DEBUG Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3a52dba3]
+  2018-02-07 09:33:07 JdbcTransaction.java DEBUG Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@3a52dba3]
+  2018-02-07 09:33:07 PooledDataSource.java DEBUG Returned connection 978508707 to pool.
+  2018-02-07 09:33:44 LogFactory.java DEBUG Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+  2018-02-07 09:33:44 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 09:33:44 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 09:33:44 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 09:33:44 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 09:33:44 JdbcTransaction.java DEBUG Opening JDBC Connection
+  2018-02-07 09:33:45 PooledDataSource.java DEBUG Created connection 978508707.
+  2018-02-07 09:33:45 JdbcTransaction.java DEBUG Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3a52dba3]
+  2018-02-07 09:33:45 BaseJdbcLogger.java DEBUG ==>  Preparing: select * from tb_emp WHERE tel=? 
+  2018-02-07 09:33:45 BaseJdbcLogger.java DEBUG ==> Parameters: 12324134532(String)
+  2018-02-07 09:33:45 BaseJdbcLogger.java DEBUG <==      Total: 1
+  2018-02-07 09:33:45 JdbcTransaction.java DEBUG Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3a52dba3]
+  2018-02-07 09:33:45 JdbcTransaction.java DEBUG Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@3a52dba3]
+  2018-02-07 09:33:45 PooledDataSource.java DEBUG Returned connection 978508707 to pool.
+  2018-02-07 11:28:16 LogFactory.java DEBUG Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+  2018-02-07 11:28:16 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:28:16 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:28:16 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:28:16 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:28:16 JdbcTransaction.java DEBUG Opening JDBC Connection
+  2018-02-07 11:28:16 PooledDataSource.java DEBUG Created connection 2056031695.
+  2018-02-07 11:28:16 JdbcTransaction.java DEBUG Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7a8c8dcf]
+  2018-02-07 11:28:16 BaseJdbcLogger.java DEBUG ==>  Preparing: select * from tb_emp and tel=? 
+  2018-02-07 11:28:16 BaseJdbcLogger.java DEBUG ==> Parameters: 12324134532(String)
+  2018-02-07 11:28:16 JdbcTransaction.java DEBUG Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7a8c8dcf]
+  2018-02-07 11:28:16 JdbcTransaction.java DEBUG Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@7a8c8dcf]
+  2018-02-07 11:28:16 PooledDataSource.java DEBUG Returned connection 2056031695 to pool.
+  2018-02-07 11:29:56 LogFactory.java DEBUG Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+  2018-02-07 11:29:56 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:29:56 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:29:56 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:29:56 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:29:56 JdbcTransaction.java DEBUG Opening JDBC Connection
+  2018-02-07 11:29:56 PooledDataSource.java DEBUG Created connection 2056031695.
+  2018-02-07 11:29:56 JdbcTransaction.java DEBUG Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7a8c8dcf]
+  2018-02-07 11:29:56 BaseJdbcLogger.java DEBUG ==>  Preparing: select * from tb_emp tel=? 
+  2018-02-07 11:29:56 BaseJdbcLogger.java DEBUG ==> Parameters: 12324134532(String)
+  2018-02-07 11:29:56 JdbcTransaction.java DEBUG Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7a8c8dcf]
+  2018-02-07 11:29:56 JdbcTransaction.java DEBUG Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@7a8c8dcf]
+  2018-02-07 11:29:56 PooledDataSource.java DEBUG Returned connection 2056031695 to pool.
+  2018-02-07 11:31:29 LogFactory.java DEBUG Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+  2018-02-07 11:31:29 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:31:29 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:31:29 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:31:29 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:31:29 JdbcTransaction.java DEBUG Opening JDBC Connection
+  2018-02-07 11:31:29 PooledDataSource.java DEBUG Created connection 1965237677.
+  2018-02-07 11:31:29 JdbcTransaction.java DEBUG Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@752325ad]
+  2018-02-07 11:31:29 BaseJdbcLogger.java DEBUG ==>  Preparing: select * from tb_emp WHERE tel=? 
+  2018-02-07 11:31:29 BaseJdbcLogger.java DEBUG ==> Parameters: 12324134532(String)
+  2018-02-07 11:31:29 BaseJdbcLogger.java DEBUG <==      Total: 1
+  2018-02-07 11:31:29 JdbcTransaction.java DEBUG Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@752325ad]
+  2018-02-07 11:31:29 JdbcTransaction.java DEBUG Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@752325ad]
+  2018-02-07 11:31:29 PooledDataSource.java DEBUG Returned connection 1965237677 to pool.
+  2018-02-07 11:36:22 LogFactory.java DEBUG Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+  2018-02-07 11:36:22 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:36:22 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:36:22 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:36:22 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:36:22 JdbcTransaction.java DEBUG Opening JDBC Connection
+  2018-02-07 11:36:22 PooledDataSource.java DEBUG Created connection 978508707.
+  2018-02-07 11:36:22 JdbcTransaction.java DEBUG Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3a52dba3]
+  2018-02-07 11:36:22 BaseJdbcLogger.java DEBUG ==>  Preparing: select * from tb_emp where tel=? 
+  2018-02-07 11:36:22 BaseJdbcLogger.java DEBUG ==> Parameters: 12324134532(String)
+  2018-02-07 11:36:22 BaseJdbcLogger.java DEBUG <==      Total: 1
+  2018-02-07 11:36:22 JdbcTransaction.java DEBUG Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3a52dba3]
+  2018-02-07 11:36:22 JdbcTransaction.java DEBUG Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@3a52dba3]
+  2018-02-07 11:36:22 PooledDataSource.java DEBUG Returned connection 978508707 to pool.
+  2018-02-07 11:36:49 LogFactory.java DEBUG Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+  2018-02-07 11:36:49 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:36:49 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:36:49 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:36:49 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:36:49 JdbcTransaction.java DEBUG Opening JDBC Connection
+  2018-02-07 11:36:49 PooledDataSource.java DEBUG Created connection 978508707.
+  2018-02-07 11:36:49 JdbcTransaction.java DEBUG Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3a52dba3]
+  2018-02-07 11:36:49 BaseJdbcLogger.java DEBUG ==>  Preparing: select * from tb_emp where tel=?, , 
+  2018-02-07 11:36:49 BaseJdbcLogger.java DEBUG ==> Parameters: 12324134532(String)
+  2018-02-07 11:36:49 JdbcTransaction.java DEBUG Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3a52dba3]
+  2018-02-07 11:36:49 JdbcTransaction.java DEBUG Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@3a52dba3]
+  2018-02-07 11:36:49 PooledDataSource.java DEBUG Returned connection 978508707 to pool.
+  2018-02-07 11:37:28 LogFactory.java DEBUG Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+  2018-02-07 11:37:28 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:37:28 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:37:28 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:37:28 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:37:28 JdbcTransaction.java DEBUG Opening JDBC Connection
+  2018-02-07 11:37:28 PooledDataSource.java DEBUG Created connection 978508707.
+  2018-02-07 11:37:28 JdbcTransaction.java DEBUG Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3a52dba3]
+  2018-02-07 11:37:28 BaseJdbcLogger.java DEBUG ==>  Preparing: select * from tb_emp where tel=? 
+  2018-02-07 11:37:29 BaseJdbcLogger.java DEBUG ==> Parameters: 12324134532(String)
+  2018-02-07 11:37:29 BaseJdbcLogger.java DEBUG <==      Total: 1
+  2018-02-07 11:37:29 JdbcTransaction.java DEBUG Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3a52dba3]
+  2018-02-07 11:37:29 JdbcTransaction.java DEBUG Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@3a52dba3]
+  2018-02-07 11:37:29 PooledDataSource.java DEBUG Returned connection 978508707 to pool.
+  2018-02-07 11:42:39 LogFactory.java DEBUG Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+  2018-02-07 11:42:39 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:42:39 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:42:39 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:42:39 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:42:39 JdbcTransaction.java DEBUG Opening JDBC Connection
+  2018-02-07 11:42:39 PooledDataSource.java DEBUG Created connection 1442726378.
+  2018-02-07 11:42:39 JdbcTransaction.java DEBUG Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@55fe41ea]
+  2018-02-07 11:42:39 BaseJdbcLogger.java DEBUG ==>  Preparing: update tb_emp SET empName=? tel=? where empId=? 
+  2018-02-07 11:42:39 BaseJdbcLogger.java DEBUG ==> Parameters: 张三2333(String), 6666666(String), 1(Integer)
+  2018-02-07 11:42:39 JdbcTransaction.java DEBUG Rolling back JDBC Connection [com.mysql.jdbc.JDBC4Connection@55fe41ea]
+  2018-02-07 11:42:39 JdbcTransaction.java DEBUG Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@55fe41ea]
+  2018-02-07 11:42:39 JdbcTransaction.java DEBUG Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@55fe41ea]
+  2018-02-07 11:42:39 PooledDataSource.java DEBUG Returned connection 1442726378 to pool.
+  2018-02-07 11:44:04 LogFactory.java DEBUG Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+  2018-02-07 11:44:04 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:44:04 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:44:04 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:44:04 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:44:04 JdbcTransaction.java DEBUG Opening JDBC Connection
+  2018-02-07 11:44:04 PooledDataSource.java DEBUG Created connection 1442726378.
+  2018-02-07 11:44:04 JdbcTransaction.java DEBUG Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@55fe41ea]
+  2018-02-07 11:44:04 BaseJdbcLogger.java DEBUG ==>  Preparing: update tb_emp SET and empName=? and tel=? where empId=? 
+  2018-02-07 11:44:04 BaseJdbcLogger.java DEBUG ==> Parameters: 张三2333(String), 6666666(String), 1(Integer)
+  2018-02-07 11:44:04 JdbcTransaction.java DEBUG Rolling back JDBC Connection [com.mysql.jdbc.JDBC4Connection@55fe41ea]
+  2018-02-07 11:44:04 JdbcTransaction.java DEBUG Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@55fe41ea]
+  2018-02-07 11:44:04 JdbcTransaction.java DEBUG Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@55fe41ea]
+  2018-02-07 11:44:04 PooledDataSource.java DEBUG Returned connection 1442726378 to pool.
+  2018-02-07 11:44:35 LogFactory.java DEBUG Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+  2018-02-07 11:44:35 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:44:35 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:44:35 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:44:35 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:44:36 JdbcTransaction.java DEBUG Opening JDBC Connection
+  2018-02-07 11:44:36 PooledDataSource.java DEBUG Created connection 1442726378.
+  2018-02-07 11:44:36 JdbcTransaction.java DEBUG Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@55fe41ea]
+  2018-02-07 11:44:36 BaseJdbcLogger.java DEBUG ==>  Preparing: update tb_emp SET empName=? and tel=? where empId=? 
+  2018-02-07 11:44:36 BaseJdbcLogger.java DEBUG ==> Parameters: 张三2333(String), 6666666(String), 1(Integer)
+  2018-02-07 11:44:36 JdbcTransaction.java DEBUG Rolling back JDBC Connection [com.mysql.jdbc.JDBC4Connection@55fe41ea]
+  2018-02-07 11:44:36 JdbcTransaction.java DEBUG Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@55fe41ea]
+  2018-02-07 11:44:36 JdbcTransaction.java DEBUG Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@55fe41ea]
+  2018-02-07 11:44:36 PooledDataSource.java DEBUG Returned connection 1442726378 to pool.
+  2018-02-07 11:52:06 LogFactory.java DEBUG Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+  2018-02-07 11:52:06 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:52:06 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:52:06 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:52:06 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:52:06 JdbcTransaction.java DEBUG Opening JDBC Connection
+  2018-02-07 11:52:07 PooledDataSource.java DEBUG Created connection 1442726378.
+  2018-02-07 11:52:07 JdbcTransaction.java DEBUG Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@55fe41ea]
+  2018-02-07 11:52:07 BaseJdbcLogger.java DEBUG ==>  Preparing: update tb_emp SET ,empName=? ,el=? where empId=? 
+  2018-02-07 11:52:07 BaseJdbcLogger.java DEBUG ==> Parameters: 张三2333(String), 6666666(String), 1(Integer)
+  2018-02-07 11:52:07 JdbcTransaction.java DEBUG Rolling back JDBC Connection [com.mysql.jdbc.JDBC4Connection@55fe41ea]
+  2018-02-07 11:52:07 JdbcTransaction.java DEBUG Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@55fe41ea]
+  2018-02-07 11:52:07 JdbcTransaction.java DEBUG Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@55fe41ea]
+  2018-02-07 11:52:07 PooledDataSource.java DEBUG Returned connection 1442726378 to pool.
+  2018-02-07 11:52:34 LogFactory.java DEBUG Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+  2018-02-07 11:52:34 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:52:34 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:52:34 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:52:34 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:52:34 JdbcTransaction.java DEBUG Opening JDBC Connection
+  2018-02-07 11:52:35 PooledDataSource.java DEBUG Created connection 1442726378.
+  2018-02-07 11:52:35 JdbcTransaction.java DEBUG Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@55fe41ea]
+  2018-02-07 11:52:35 BaseJdbcLogger.java DEBUG ==>  Preparing: update tb_emp SET ,empName=? ,tel=? where empId=? 
+  2018-02-07 11:52:35 BaseJdbcLogger.java DEBUG ==> Parameters: 张三2333(String), 6666666(String), 1(Integer)
+  2018-02-07 11:52:35 JdbcTransaction.java DEBUG Rolling back JDBC Connection [com.mysql.jdbc.JDBC4Connection@55fe41ea]
+  2018-02-07 11:52:35 JdbcTransaction.java DEBUG Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@55fe41ea]
+  2018-02-07 11:52:35 JdbcTransaction.java DEBUG Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@55fe41ea]
+  2018-02-07 11:52:35 PooledDataSource.java DEBUG Returned connection 1442726378 to pool.
+  2018-02-07 11:53:19 LogFactory.java DEBUG Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+  2018-02-07 11:53:19 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:53:19 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:53:19 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:53:19 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:53:19 JdbcTransaction.java DEBUG Opening JDBC Connection
+  2018-02-07 11:53:19 PooledDataSource.java DEBUG Created connection 1442726378.
+  2018-02-07 11:53:19 JdbcTransaction.java DEBUG Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@55fe41ea]
+  2018-02-07 11:53:19 BaseJdbcLogger.java DEBUG ==>  Preparing: update tb_emp SET empName=?, tel=? where empId=? 
+  2018-02-07 11:53:19 BaseJdbcLogger.java DEBUG ==> Parameters: 张三2333(String), 6666666(String), 1(Integer)
+  2018-02-07 11:53:19 BaseJdbcLogger.java DEBUG <==    Updates: 1
+  2018-02-07 11:53:19 JdbcTransaction.java DEBUG Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@55fe41ea]
+  2018-02-07 11:53:20 JdbcTransaction.java DEBUG Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@55fe41ea]
+  2018-02-07 11:53:20 JdbcTransaction.java DEBUG Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@55fe41ea]
+  2018-02-07 11:53:20 PooledDataSource.java DEBUG Returned connection 1442726378 to pool.
+  2018-02-07 11:54:41 LogFactory.java DEBUG Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+  2018-02-07 11:54:41 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:54:41 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:54:41 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:54:41 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 11:54:41 JdbcTransaction.java DEBUG Opening JDBC Connection
+  2018-02-07 11:54:41 PooledDataSource.java DEBUG Created connection 484589713.
+  2018-02-07 11:54:41 JdbcTransaction.java DEBUG Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1ce24091]
+  2018-02-07 11:54:41 BaseJdbcLogger.java DEBUG ==>  Preparing: update tb_emp where empId=? 
+  2018-02-07 11:54:41 BaseJdbcLogger.java DEBUG ==> Parameters: 1(Integer)
+  2018-02-07 11:54:41 JdbcTransaction.java DEBUG Rolling back JDBC Connection [com.mysql.jdbc.JDBC4Connection@1ce24091]
+  2018-02-07 11:54:41 JdbcTransaction.java DEBUG Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1ce24091]
+  2018-02-07 11:54:41 JdbcTransaction.java DEBUG Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1ce24091]
+  2018-02-07 11:54:41 PooledDataSource.java DEBUG Returned connection 484589713 to pool.
+  2018-02-07 12:01:09 LogFactory.java DEBUG Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+  2018-02-07 12:01:09 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 12:01:09 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 12:01:09 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 12:01:09 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 13:53:32 LogFactory.java DEBUG Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+  2018-02-07 13:53:32 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 13:53:32 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 13:53:32 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 13:53:32 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 13:53:32 JdbcTransaction.java DEBUG Opening JDBC Connection
+  2018-02-07 13:53:33 PooledDataSource.java DEBUG Created connection 1442726378.
+  2018-02-07 13:53:33 JdbcTransaction.java DEBUG Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@55fe41ea]
+  2018-02-07 13:53:33 BaseJdbcLogger.java DEBUG ==>  Preparing: delete from tb_emp where empId in ( ? , ? , ? ) 
+  2018-02-07 13:53:33 BaseJdbcLogger.java DEBUG ==> Parameters: 1(Integer), 2(Integer), 3(Integer)
+  2018-02-07 13:53:33 BaseJdbcLogger.java DEBUG <==    Updates: 3
+  2018-02-07 13:53:33 JdbcTransaction.java DEBUG Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@55fe41ea]
+  2018-02-07 13:53:33 JdbcTransaction.java DEBUG Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@55fe41ea]
+  2018-02-07 13:53:33 JdbcTransaction.java DEBUG Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@55fe41ea]
+  2018-02-07 13:53:33 PooledDataSource.java DEBUG Returned connection 1442726378 to pool.
+  2018-02-07 13:59:20 LogFactory.java DEBUG Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+  2018-02-07 13:59:20 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 13:59:20 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 13:59:20 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 13:59:20 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 13:59:21 JdbcTransaction.java DEBUG Opening JDBC Connection
+  2018-02-07 13:59:21 PooledDataSource.java DEBUG Created connection 690339675.
+  2018-02-07 13:59:21 JdbcTransaction.java DEBUG Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2925bf5b]
+  2018-02-07 13:59:21 BaseJdbcLogger.java DEBUG ==>  Preparing: select * from tb_emp where empName like ? 
+  2018-02-07 13:59:21 BaseJdbcLogger.java DEBUG ==> Parameters: 刘(String)
+  2018-02-07 13:59:21 BaseJdbcLogger.java DEBUG <==      Total: 0
+  2018-02-07 13:59:21 JdbcTransaction.java DEBUG Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2925bf5b]
+  2018-02-07 13:59:21 JdbcTransaction.java DEBUG Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@2925bf5b]
+  2018-02-07 13:59:21 PooledDataSource.java DEBUG Returned connection 690339675 to pool.
+  2018-02-07 14:01:54 LogFactory.java DEBUG Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+  2018-02-07 14:01:54 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 14:01:54 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 14:01:54 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 14:01:54 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 14:01:54 JdbcTransaction.java DEBUG Opening JDBC Connection
+  2018-02-07 14:01:54 PooledDataSource.java DEBUG Created connection 690339675.
+  2018-02-07 14:01:54 JdbcTransaction.java DEBUG Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2925bf5b]
+  2018-02-07 14:01:54 BaseJdbcLogger.java DEBUG ==>  Preparing: select * from tb_emp where empName like concat('%',?,'%') 
+  2018-02-07 14:01:54 BaseJdbcLogger.java DEBUG ==> Parameters: 刘(String)
+  2018-02-07 14:01:54 BaseJdbcLogger.java DEBUG <==      Total: 2
+  2018-02-07 14:01:54 JdbcTransaction.java DEBUG Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2925bf5b]
+  2018-02-07 14:01:54 JdbcTransaction.java DEBUG Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@2925bf5b]
+  2018-02-07 14:01:54 PooledDataSource.java DEBUG Returned connection 690339675 to pool.
+  2018-02-07 14:03:08 LogFactory.java DEBUG Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+  2018-02-07 14:03:08 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 14:03:08 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 14:03:08 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 14:03:08 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 14:03:39 LogFactory.java DEBUG Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+  2018-02-07 14:03:39 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 14:03:39 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 14:03:39 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 14:03:39 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 14:04:11 LogFactory.java DEBUG Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+  2018-02-07 14:04:11 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 14:04:11 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 14:04:11 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 14:04:11 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 14:04:11 JdbcTransaction.java DEBUG Opening JDBC Connection
+  2018-02-07 14:04:11 PooledDataSource.java DEBUG Created connection 1359953204.
+  2018-02-07 14:04:11 JdbcTransaction.java DEBUG Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@510f3d34]
+  2018-02-07 14:04:11 BaseJdbcLogger.java DEBUG ==>  Preparing: select * from tb_emp where empName like ? 
+  2018-02-07 14:04:11 BaseJdbcLogger.java DEBUG ==> Parameters: %刘%(String)
+  2018-02-07 14:04:11 BaseJdbcLogger.java DEBUG <==      Total: 2
+  2018-02-07 14:04:11 JdbcTransaction.java DEBUG Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@510f3d34]
+  2018-02-07 14:04:11 JdbcTransaction.java DEBUG Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@510f3d34]
+  2018-02-07 14:04:11 PooledDataSource.java DEBUG Returned connection 1359953204 to pool.
+  2018-02-07 14:07:53 LogFactory.java DEBUG Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+  2018-02-07 14:07:53 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 14:07:53 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 14:07:53 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 14:07:53 PooledDataSource.java DEBUG PooledDataSource forcefully closed/removed all connections.
+  2018-02-07 14:07:53 JdbcTransaction.java DEBUG Opening JDBC Connection
+  2018-02-07 14:07:53 PooledDataSource.java DEBUG Created connection 2056031695.
+  2018-02-07 14:07:53 JdbcTransaction.java DEBUG Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7a8c8dcf]
+  2018-02-07 14:07:53 BaseJdbcLogger.java DEBUG ==>  Preparing: delete from tb_emp where empId in ( ? , ? ) 
+  2018-02-07 14:07:53 BaseJdbcLogger.java DEBUG ==> Parameters: 7(Integer), 8(Integer)
+  2018-02-07 14:07:53 BaseJdbcLogger.java DEBUG <==    Updates: 2
+  2018-02-07 14:07:53 JdbcTransaction.java DEBUG Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@7a8c8dcf]
+  2018-02-07 14:07:53 JdbcTransaction.java DEBUG Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7a8c8dcf]
+  2018-02-07 14:07:53 JdbcTransaction.java DEBUG Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@7a8c8dcf]
+  2018-02-07 14:07:53 PooledDataSource.java DEBUG Returned connection 2056031695 to pool.
+  
